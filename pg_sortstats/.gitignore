@@ -1,0 +1,8 @@
+.*.sw*
+*.o
+*.so
+*.zip
+*.bc
+*.gcno
+tags
+results/
