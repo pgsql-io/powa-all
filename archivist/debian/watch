@@ -1,0 +1,3 @@
+version=3
+opts="uversionmangle=s/_/./g" \
+  https://github.com/powa-team/powa-archivist/releases .*/archive/REL_(.*).tar.gz

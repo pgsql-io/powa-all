@@ -1,0 +1,40 @@
+1.1.1:
+  Bugfix:
+    -  Make sure that repo connection is available when getting repo powa
+       version (Julien Rouhaud, thanks to Adrien Nayrat for the report and
+       testing the patch)
+
+1.1.0:
+  New features:
+    - Avoid explicit "LOAD 'powa'" with poWA 4.1.0, so a superuser isn't
+      required anymore when PoWA isn't in shared_preload_libraries (Julien
+      Rouhaud)
+    - Store postgres and handled extensions versions on repository server
+      (Julien Rouhaud)
+
+  Bug fixes:
+    - Handle errors that might happen during snapshot (Julien Rouhaud)
+
+1.0.0:
+  New features:
+    - Handle the new query_cleanup query that may be run after getting remote
+      data.
+  Bugfix:
+    - Let workers quit immediately if they're asked to stop.
+
+0.0.3
+  Bugfix:
+    - Support standard_conforming_strings = off
+    - Better error message for remote servers lacking powa extension (Thomas
+      Reiss and Julien Rouhaud)
+
+0.0.2
+  Bugfix:
+    - Ignore deactivated servers
+
+  Miscellaneous:
+    - Set lock_timeout to 2s for every pg connection
+    - Fully qualify all objects in SQL queries
+
+0.0.1
+    Initial release

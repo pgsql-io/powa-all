@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+  <div class="center row">
+    <div class="columns large-4 large-offset-4 medium-6 medium-offset-3">
+      <form method="POST" action="">
+          {% apply field(name="username", label=_("Username")) %}{% end %}
+          {% apply field(name="password", label=_("Password"), type="password") %}{% end %}
+          {% apply field(name="server", label=_("Server"), tag="select") %}
+            {% for opt in sorted(servers().keys()) %}
+            <option value="{{opt}}">{{opt}}</option>
+            {% end %}
+          {% end %}
+          <div class="columns large-12 text-center">
+            <input type="submit" name="login" class="button" id="Login" value="Login"/>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% end %}

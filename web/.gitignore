@@ -1,0 +1,12 @@
+node_modules/
+**/.sass-cache/
+powa/static/build/
+.ropeproject
+*.pyc
+**/__pycache__/
+powa-web.conf
+build
+powa.egg.info
+dist
+.*.sw?
+.pypirc
