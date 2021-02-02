@@ -21,14 +21,7 @@ For more information, please read:
 
   * the Documentation : https://powa.readthedocs.io/
 
-WARNING !!!
---------------
-
 The current version PoWA is designed for PostgreSQL 9.4 and later.
-
-If you're using PostgreSQL 9.3, you should use PoWA version 1.x:
-  * The code is here: https://github.com/powa-team/powa/tree/REL_1_STABLE
-  * The documentation is there: https://powa.readthedocs.io/en/rel_1_stable/
 
 Where's the code ?
 --------------------
